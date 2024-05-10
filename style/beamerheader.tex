@@ -1,0 +1,64 @@
+% Packages
+\usepackage[]{units}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{physics}
+
+
+\colorlet{structure}{red!25!black}
+\xdefinecolor{Concordia1}{rgb}{0.0,0.322,0.522}
+\xdefinecolor{Concordia2}{rgb}{0.83,0.72,0.54}
+\xdefinecolor{Concordia3}{rgb}{0.52,0.04,0.17}
+
+\beamertemplateshadingbackground{white}{white}%{Concord2}
+\usecolortheme[named=Concordia1]{structure}
+
+\usetheme{Madrid}
+% \setbeamertemplate{page number in head/foot}[framenumber]
+%\setbeamertemplate{enumerate items}[framenumber]
+
+% Style
+\logo{\includegraphics[height=0.4in]{./style/UFSM_principal_cor.png}}
+\beamertemplatenavigationsymbolsempty
+
+
+\makeatletter
+% Remove (parentheses) around "short institute" declaration
+\patchcmd{\beamer@@tmpl@footline}% <cmd>
+  {(\insertshortinstitute)}% <search>
+  {}% <replace>
+  {}{}% <success><failure>
+\makeatother
+
+\AtBeginSection{
+   \frame{\sectionpage}
+}
+
+\makeatletter
+\setbeamertemplate{section page}
+{
+  \begingroup
+    \centering
+%    {\usebeamerfont{section name}\usebeamercolor[fg]{section name}\sectionname~\insertsectionnumber}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=12pt,center,colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]{section title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+  \endgroup
+}
+\makeatother
+
+
+
+% \setbeamercolor*{frametitle}{bg=red} % Altera cor do header nos slides que não são início de seção
+
+% Formatando as cores do footer
+\setbeamercolor*{author in head/foot}{fg=white,bg=Concordia1}
+\setbeamercolor*{title in head/foot}{fg=white,bg=Concordia1}
+\setbeamercolor*{date in head/foot}{fg=white,bg=Concordia1}
+% \setbeamercolor*{institute in head/foot}{parent=palette primary}
+\setbeamercolor*{item projected}{bg=Concordia1}
+\setbeamercolor{item}{fg=white,bg=Concordia1}
+
+\usepackage{amsmath,mathtools}

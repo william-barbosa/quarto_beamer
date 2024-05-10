@@ -1,0 +1,96 @@
+---
+title: "Mercados de bens e financeiros:"
+subtitle: IS-LM
+author:
+  - name: Prof. Dr. William Barbosa
+    orcid: 0000-0002-2150-9282
+    email: williambarbosa@alumni.usp.br
+date: today
+date-format: long
+bibliography: bibliography.bib
+format:
+  beamer:
+    pdf-engine: xelatex
+    template: style/beamer.template
+    include-in-header: style/beamerheader.tex
+    include-before-body: style/beamerprefix.tex
+    include-after-body: style/beamersuffix.tex
+aspectratio: 169
+---
+
+# O modelo IS-LM
+
+## Considerações iniciais
+
+- A história remonta que o modelo IS-LM surgiu com Hicks (1937) como um resumo da Teoria Geral de Keynes (1936);
+
+- Conforme Hicks, as principais contribuições de Keynes foi a descrição dos mercados de bens (IS) e mercados financeiros (LM);
+
+- O modelo incialmente pressupõe que:
+  1. A economia é fechada;
+  2. Toda a produção é igual a demanda por bens;
+  3. O investimento depende de _i_ e _vendas/produto_;
+  4. O Banco Central determina a taxa de juros (isso terá implicação no formato da LM).
+
+# Mercado de Bens (e Serviços)
+
+## A relação IS
+
+Essa é a relação que expressa equilíbrio de mercado de bens (e serviços):
+
+$$
+Y = C(Y-T) + I(Y,i) + G
+$${#eq-IS}
+
+Em que:
+
+- C: Consumo depende da renda disponível $(Y-T)$;
+
+- I: Investimento depende da renda $(Y)$ e juros $(i)$. A Equação @eq-invest apresenta a relação entre as variáveis;
+
+- G: Gastos do Governo.
+
+$$
+I = I(\overset{+}Y,\overset{-}i)
+$${#eq-invest}
+
+## A relação IS
+
+
+::: columns
+::: {.column width="40%"}
+
+![](./figuras/Fig_5_2.png){fig-align="center" width=60%}
+:::
+
+::: {.column width="60%"}
+\vspace{5pt}
+
+O gráfico *b* descreve a relação entre taxa de juros (_i_) e o produto:
+
+- O aumento da taxa de juros reduz o investimento, o que leva a diminuição do produto, que diminui o consumo e reduz ainda mais o investimento por meio do efeito multiplicador;
+- **Resumindo:** $i \Uparrow$
+
+
+:::
+:::
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+- Add a reference to your \LaTeX-template (@stanford_beamer_template) is:
+
+## References

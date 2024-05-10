@@ -1,16 +1,7 @@
-# A Quarto template for Concordia University presentations
+# Exemplo de apresentação para Beamer com Quarto
 
-## Getting started
+## Inicialização
 
-- Click on the green button: Use this template
-- Choose: Create a new repository
-- Pick a name for your repository
-- Click on the green button: Create repository from template
-- Click on Actions and wait for the "Initial commit" action to finish
-- Under each successful action, you can find slides.zip, which contains a PDF version of the slides.
-
-## Run locally on your computer
-
-- Install [quarto](https://quarto.org/docs/get-started/)
-- Run `quarto render`
-- You can find a PDF version of the slides in the `_output` folder.
+- cd "até a pasta"
+- Execute `quarto render`
+- A saída final estará em `_output`.
